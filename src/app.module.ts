@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { StudentModule } from './student/student.module';
+import { Student } from './student/entities/student.entity';
 
 @Module({
   imports: [
@@ -23,7 +24,7 @@ import { StudentModule } from './student/student.module';
         charset: 'utf8mb4',
       }),
     }),
-    StudentModule
+    StudentModule,
   ],
   controllers: [],
   providers: [],

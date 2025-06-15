@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
    const config = new DocumentBuilder()
-    .setTitle('API - Nome do Projeto')
+    .setTitle('API - Academia-App')
     .setDescription('Documentação da API NestJS usando Swagger')
     .setVersion('1.0')
     .addBearerAuth() // Caso use autenticação JWT
